@@ -6,6 +6,7 @@ This script generates Pascal's Triangle
 up to a specified number of rows.
 """
 
+
 def pascal_triangle(n):
     """
     Generate Pascal's Triangle with n rows.
