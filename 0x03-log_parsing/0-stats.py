@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 """ log parsing
     to write a script that reads stdin line by line and computes metrics
     input format: <IP Address> - [<date>] "GET /projects/260 HTTP/1.1" <status code> <file size>
