@@ -1,3 +1,4 @@
+#!/usr/bin/node
 const request = require('request');
 
 // Function to get all characters
