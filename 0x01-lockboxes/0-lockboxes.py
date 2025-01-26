@@ -1,37 +1,26 @@
 #!/usr/bin/python3
-"""open n box in same time
-    we need to use linked list for our problem 
-
-    box [ key_sec_box ]
-    0 = [3, 2 , 4]
-    1 = [2,4,1]
-    2 = [4,6]
-
-    [[1, 4, 6], [2], [0, 4, 1], [5, 6, 2], [3], [4, 1], [6]]
-
-
-    
+"""
+Solution to lockboxes problem
 """
 
 
 def canUnlockAll(boxes):
-    """of listes [[],[],[]] """
-    visited = set()  # To keep track of visited nodes
-    open_box = []
-    i = 0
+    """
+    Determines whether a series of locked boxes can be opened
+    based on keys that can be attained.
+    Solution to the lockboxes problem
+    """
+    if (type(boxes)) is not list:
+        return False
+    elif (len(boxes)) == 0:
+        return False
 
-    
-    while i < len(boxes):
-        open_box.append(boxes[i])
-        for ele in open_box[i]:
-            if ele in 
-        
-
-
-
-
-
-    
-
-
-
+    for k in range(1, len(boxes) - 1):
+        boxes_checked = False
+        for idx in range(len(boxes)):
+            boxes_checked = k in boxes[idx] and k != idx
+            if boxes_checked:
+                break
+        if boxes_checked is False:
+            return boxes_checked
+    return True
